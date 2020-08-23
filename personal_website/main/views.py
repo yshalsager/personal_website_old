@@ -14,3 +14,10 @@ def about():
                            heading="About Me",
                            subheading="This is what I do",
                            image=url_for('static', filename='img/home-bg.jpg'))
+
+
+@main.route('/blog')
+def blog():
+    return render_template('blog.html',
+                           heading="Blog",
+                           image=url_for('static', filename='img/home-bg.jpg'))
