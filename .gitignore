@@ -44,3 +44,6 @@ venv
 # IDE
 .idea/
 .vscode/
+
+# Others
+node_modules
