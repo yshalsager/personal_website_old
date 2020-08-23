@@ -45,7 +45,7 @@
 <!-- Page Header -->
 {% if heading %}
 <header class="masthead"
-        style="{% if image %}background-image: url({{ image }}){% else %}background-color: #cccccc;{% endif %}">
+        style="{% if image %}background-image: url({{ image }}){% else %}background-color: #2a2a2a;{% endif %}">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -65,7 +65,9 @@
 <!-- Main Content -->
 {%- endblock content %}
 
+{% block linebreak -%}
 <hr>
+{%- endblock linebreak %}
 
 {% block footer -%}
 {% include 'includes/footer.html' %}

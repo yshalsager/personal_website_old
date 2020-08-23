@@ -5,9 +5,7 @@ from . import main
 @main.route('/')
 def index():
     return render_template('index.html',
-                           heading="Clean Blog",
-                           subheading="A Blog Theme by Start Bootstrap",
-                           image=url_for('static', filename='img/home-bg.jpg'))
+                           image=url_for('static', filename='img/home-bg.jpg'), safe=True)
 
 
 @main.route('/about')
