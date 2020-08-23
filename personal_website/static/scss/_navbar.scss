@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  position: absolute;
+  position: relative;
   border-bottom: 1px solid $gray-200;
   background-color: white;
   @include sans-serif-font;
@@ -62,8 +62,8 @@
     -webkit-backface-visibility: hidden;
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
-      position: fixed;
-      top: -67px;
+      position: relative;
+      //top: -67px;
       -webkit-transition: -webkit-transform 0.2s;
       -moz-transition: -moz-transform 0.2s;
       transition: transform 0.2s;
