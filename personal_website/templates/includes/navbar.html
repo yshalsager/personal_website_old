@@ -1,7 +1,10 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top is-fixed" id="mainNav">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">Youssif Shaaban Alsager (yshalsager)</a>
+
+        <a class="navbar-brand" style="display: contents;" href="/{{ lang }}/">
+            <img class="img-fluid mx-3" src="{{ url_for('static', filename='img/logo.png')}}" alt="logo"
+                 style="width: 48px; height: 48px;"/><span class="d-none d-lg-block" style="white-space:nowrap">Youssif Shaaban Alsager (yshalsager)</span></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -11,19 +14,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/{{ lang }}/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/{{ lang }}/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="/{{ lang }}/blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
+                    <a class="nav-link" href="/{{ lang }}/projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="/{{ lang }}/contact">Contact</a>
                 </li>
             </ul>
         </div>
