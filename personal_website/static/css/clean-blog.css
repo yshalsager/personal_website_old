@@ -94,6 +94,10 @@ img::-moz-selection {
   font-family: 'Open Sans', 'Helvetica Neue', 'Tajawal', Helvetica, Arial, sans-serif;
 }
 
+#mainNav .btn {
+  font-size: 12px;
+}
+
 #mainNav .navbar-brand {
   font-weight: 800;
   color: #343a40;

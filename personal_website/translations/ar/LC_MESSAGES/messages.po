@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-08-24 16:08+0200\n"
+"POT-Creation-Date: 2020-08-24 20:45+0200\n"
 "PO-Revision-Date: 2020-08-24 11:52+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ar\n"
@@ -19,16 +19,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: personal_website/main/en/views.py:26
+#: personal_website/main/en/views.py:19
 msgid "About Me"
 msgstr "من أنا؟"
 
-#: personal_website/main/en/views.py:27
+#: personal_website/main/en/views.py:20
 msgid "This is what I do"
 msgstr "هذا ما أفعله"
 
-#: personal_website/main/en/views.py:34
-#: personal_website/templates/includes/navbar.html:23
+#: personal_website/main/en/views.py:27
+#: personal_website/templates/includes/navbar.html:22
 msgid "Blog"
 msgstr "المدونة"
 
@@ -48,7 +48,6 @@ msgstr "حدث خطأ بالخادم :("
 msgid "Unknown Error"
 msgstr "خطأ غير معروف"
 
-#: personal_website/templates/includes/navbar.html:7
 #: personal_website/templates/index.html:2
 msgid "Youssif Shaaban Alsager (yshalsager)"
 msgstr "يوسف شعبان الصغير (yshalsager)"
@@ -65,35 +64,38 @@ msgstr "مطور بايثون وكاتب تقني."
 msgid "Copyright &copy; yshalsager"
 msgstr "جميع الحقوق محفوظة &copy; yshalsager"
 
-#: personal_website/templates/includes/navbar.html:11
-msgid "Menu"
-msgstr "القائمة"
+#: personal_website/templates/includes/navbar.html:7
+msgid "yshalsager"
+msgstr "يوسف شعبان الصغير"
 
-#: personal_website/templates/includes/navbar.html:17
+#: personal_website/templates/includes/navbar.html:16
 msgid "Home"
 msgstr "الرئيسية"
 
-#: personal_website/templates/includes/navbar.html:20
+#: personal_website/templates/includes/navbar.html:19
 msgid "About"
 msgstr "من أنا؟"
 
-#: personal_website/templates/includes/navbar.html:26
+#: personal_website/templates/includes/navbar.html:25
 msgid "Projects"
 msgstr "مشاريعي"
 
-#: personal_website/templates/includes/navbar.html:29
+#: personal_website/templates/includes/navbar.html:28
 msgid "Contact"
 msgstr "تواصل معي"
 
-#: personal_website/templates/includes/navbar.html:35
+#: personal_website/templates/includes/navbar.html:34
 msgid "Language"
 msgstr "اللغة"
 
-#: personal_website/templates/includes/navbar.html:38
+#: personal_website/templates/includes/navbar.html:37
 msgid "Arabic"
 msgstr "العربية"
 
-#: personal_website/templates/includes/navbar.html:39
+#: personal_website/templates/includes/navbar.html:38
 msgid "English"
 msgstr "الإنجليزية"
+
+#~ msgid "Menu"
+#~ msgstr "القائمة"
 

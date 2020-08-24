@@ -4,6 +4,9 @@
   border-bottom: 1px solid $gray-200;
   background-color: white;
   @include sans-serif-font;
+  .btn {
+    font-size: 12px;
+  }
   .navbar-brand {
     font-weight: 800;
     color: $gray-800;
