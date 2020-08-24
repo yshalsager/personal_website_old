@@ -1,7 +1,5 @@
 {% extends "base.html" %}
-{% block html_attribs %}lang="en"{% endblock html_attribs %}
-
-{% block title %}Page not found!{% endblock %}
+{% block title %}{{ _('An Error Occurred') }}{% endblock %}
 
 
 {% block content %}
@@ -9,7 +7,15 @@
     <div class="row my-5">
         <div class="col-md-12">
             <h1 class="title" style="font-size: 8em;">{{ error_code }}</h1>
-            <h3 class="description">{{ description }}</h3>
+            <h3 class="description">
+                {% if error_code == '404' %}
+                {{ _('The requested page couldn\'t be found!') }}
+                {% elif error_code == '500' %}
+                {{ _('Internal Server Error :(') }}
+                {% else %}
+                {{ _('Unknown Error') }}
+                {% endif %}
+            </h3>
         </div>
     </div>
 </div>

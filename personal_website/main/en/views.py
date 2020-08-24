@@ -1,5 +1,6 @@
 from flask import render_template, url_for, redirect
-from . import main
+from flask_babel import _
+from personal_website.main import main
 
 
 @main.route('/')
@@ -12,23 +13,16 @@ def index_en():
     return render_template('index.html', lang="en")
 
 
-@main.route('/ar/')
-def index_ar():
-    return render_template('index_ar.html', lang="ar")
-
-
 @main.route('/en/about')
 def about():
     return render_template('about.html',
-                           heading="About Me",
-                           subheading="This is what I do",
-                           lang="en",
+                           heading=_("About Me"),
+                           subheading=_("This is what I do"),
                            image=url_for('static', filename='img/home-bg.jpg'))
 
 
 @main.route('/en/blog')
 def blog():
     return render_template('blog.html',
-                           heading="Blog",
-                           lang="en",
+                           heading=_("Blog"),
                            image=url_for('static', filename='img/home-bg.jpg'))

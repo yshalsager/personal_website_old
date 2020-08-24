@@ -1,12 +1,14 @@
-from flask import render_template
+from flask import render_template, request
+from flask_babel import _, force_locale
+
 from . import main
 
 
 @main.app_errorhandler(404)
-def page_not_found(e):
-    return render_template('error.html', error_code="404", description="The requested page couldn't be found!"), 404
-
-
 @main.app_errorhandler(500)
-def internal_server_error(e):
-    return render_template('error.html', error_code="500", description="Internal Server Error :("), 500
+def error_handler(e):
+    error_code = e.code
+    if "/ar" in request.url:
+        with force_locale('ar'):
+            return render_template('error.html', error_code=str(error_code), lang="ar"), error_code
+    return render_template('error.html', error_code=str(error_code)), error_code

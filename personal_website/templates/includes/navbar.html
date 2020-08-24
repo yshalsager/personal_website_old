@@ -4,29 +4,41 @@
 
         <a class="navbar-brand" style="display: contents;" href="/{{ lang }}/">
             <img class="img-fluid mx-3" src="{{ url_for('static', filename='img/logo.png')}}" alt="logo"
-                 style="width: 48px; height: 48px;"/><span class="d-none d-lg-block" style="white-space:nowrap">Youssif Shaaban Alsager (yshalsager)</span></a>
+                 style="width: 48px; height: 48px;"/><span class="d-none d-xl-block" style="white-space:nowrap">{{ _('Youssif Shaaban Alsager (yshalsager)') }}</span></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-            Menu
+            {{ _('Menu') }}
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/{{ lang }}/">Home</a>
+                    <a class="nav-link" href="/{{ lang }}/">{{ _('Home') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/{{ lang }}/about">About</a>
+                    <a class="nav-link" href="/{{ lang }}/about">{{ _('About') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/{{ lang }}/blog">Blog</a>
+                    <a class="nav-link" href="/{{ lang }}/blog">{{ _('Blog') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/{{ lang }}/projects">Projects</a>
+                    <a class="nav-link" href="/{{ lang }}/projects">{{ _('Projects') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/{{ lang }}/contact">Contact</a>
+                    <a class="nav-link" href="/{{ lang }}/contact">{{ _('Contact') }}</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false" class="btn dropdown-toggle">
+                            {{ _('Language') }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: inherit;">
+                            <a class="dropdown-item" href="/ar/">{{ _('Arabic') }}</a>
+                            <a class="dropdown-item" href="/en/">{{ _('English') }}</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
