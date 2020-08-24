@@ -105,6 +105,7 @@ img::-moz-selection {
   padding: 13px;
   text-transform: uppercase;
   color: #343a40;
+  border-radius: .4rem;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
