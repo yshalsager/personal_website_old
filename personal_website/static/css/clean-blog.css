@@ -201,9 +201,14 @@ header.masthead .site-heading {
   }
 }
 
-header.masthead .page-heading,
-header.masthead .site-heading {
-  text-align: center;
+header.masthead .page-heading:not(body.rtl),
+header.masthead .site-heading:not(body.rtl) {
+  text-align: left;
+}
+
+header.masthead .page-heading .site-heading.text-center,
+header.masthead .site-heading .site-heading.text-center {
+  text-align: center !important;
 }
 
 header.masthead .page-heading h1,

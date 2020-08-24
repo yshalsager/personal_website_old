@@ -27,7 +27,12 @@ header.masthead {
   }
   .page-heading,
   .site-heading {
-    text-align: center;
+    &:not(body.rtl) {
+    text-align: left;
+    }
+    .site-heading.text-center {
+      text-align:center!important
+    }
     h1 {
       font-size: 50px;
       margin-top: 0;
