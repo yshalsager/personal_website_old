@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-08-24 20:45+0200\n"
+"POT-Creation-Date: 2020-08-25 19:43+0200\n"
 "PO-Revision-Date: 2020-08-24 11:52+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ar\n"
@@ -19,18 +19,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: personal_website/main/en/views.py:19
-msgid "About Me"
-msgstr "من أنا؟"
-
-#: personal_website/main/en/views.py:20
-msgid "This is what I do"
-msgstr "هذا ما أفعله"
-
-#: personal_website/main/en/views.py:27
+#: personal_website/main/ar/views.py:19 personal_website/main/en/views.py:30
 #: personal_website/templates/includes/navbar.html:22
 msgid "Blog"
 msgstr "المدونة"
+
+#: personal_website/main/en/views.py:21
+msgid "About Me"
+msgstr "من أنا؟"
+
+#: personal_website/main/en/views.py:22
+msgid "This is what I do"
+msgstr "هذا ما أفعله"
 
 #: personal_website/templates/error.html:2
 msgid "An Error Occurred"
@@ -52,11 +52,11 @@ msgstr "خطأ غير معروف"
 msgid "Youssif Shaaban Alsager (yshalsager)"
 msgstr "يوسف شعبان الصغير (yshalsager)"
 
-#: personal_website/templates/index.html:13
+#: personal_website/templates/index.html:12
 msgid "Hi, I'm Youssif Shaaban Alsager"
 msgstr "مرحبا! أنا يوسف شعبان الصغير."
 
-#: personal_website/templates/index.html:14
+#: personal_website/templates/index.html:13
 msgid "Python Developer, XDA Recognized Developer, and Technical Writer."
 msgstr "مطور بايثون وكاتب تقني."
 
