@@ -7,7 +7,7 @@
 
 {% block doc -%}
 <!DOCTYPE html>
-<html {% block html_attribs %}lang={{lang}}{% endblock html_attribs %}>
+<html{% block html_attribs %} lang={{lang}}{% endblock html_attribs %}>
 {%- block html %}
 <head>
     {%- block head %}
@@ -42,7 +42,7 @@
     {%- endblock styles %}
     {%- endblock head %}
 </head>
-<body {% block body_attribs %}class={{body_class}}{% endblock body_attribs %}>
+<body{% block body_attribs %}{% if body_class %} class={{body_class}}{% endif %}{% endblock body_attribs %}>
 {% block body -%}
 {% block navbar -%}
 {% include 'includes/navbar.html' %}
