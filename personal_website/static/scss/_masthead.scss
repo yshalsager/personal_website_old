@@ -67,6 +67,7 @@ header.masthead {
       @include sans-serif-font;
     }
     .meta {
+      text-align: right;
       font-size: 20px;
       font-weight: 300;
       font-style: italic;
@@ -84,4 +85,7 @@ header.masthead {
       }
     }
   }
+}
+body.rtl .meta {
+  text-align: left !important;
 }

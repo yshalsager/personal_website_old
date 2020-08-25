@@ -257,6 +257,7 @@ header.masthead .post-heading .subheading {
 }
 
 header.masthead .post-heading .meta {
+  text-align: right;
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
@@ -274,6 +275,10 @@ header.masthead .post-heading .meta a {
   header.masthead .post-heading .subheading {
     font-size: 30px;
   }
+}
+
+body.rtl .meta {
+  text-align: left !important;
 }
 
 .post-preview > a {

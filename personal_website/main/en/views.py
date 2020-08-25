@@ -1,6 +1,6 @@
 from flask import render_template, url_for, redirect
 from flask_babel import _
-from personal_website.main import main
+from .. import main
 
 
 @main.route('/')
