@@ -390,6 +390,10 @@ footer .list-inline {
   padding: 0;
 }
 
+footer .list-inline-item {
+  margin-top: 10px;
+}
+
 footer .copyright {
   font-size: 14px;
   margin-bottom: 0;
