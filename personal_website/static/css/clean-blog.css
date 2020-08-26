@@ -10,6 +10,14 @@ body {
   font-family: 'Lora', 'Tajawal', serif;
 }
 
+body .dynamic-float {
+  float: right;
+}
+
+body.rtl .dynamic-float {
+  float: left;
+}
+
 p {
   line-height: 1.5;
   margin: 30px 0;
