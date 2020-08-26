@@ -33,6 +33,14 @@ pytz = ">=2015.7"
 
 [[package]]
 category = "main"
+description = "Fast, simple object-to-object and broadcast signaling"
+name = "blinker"
+optional = false
+python-versions = "*"
+version = "1.4"
+
+[[package]]
+category = "main"
 description = "Composable command line interface toolkit"
 name = "click"
 optional = false
@@ -80,6 +88,22 @@ Babel = ">=2.3"
 Flask = "*"
 Jinja2 = ">=2.5"
 pytz = "*"
+
+[[package]]
+category = "main"
+description = "Flask extension that helps with sitemap generation."
+name = "flask-sitemap"
+optional = false
+python-versions = "*"
+version = "0.3.0"
+
+[package.dependencies]
+Flask = "*"
+blinker = "*"
+
+[package.extras]
+cli = ["flask-script"]
+docs = ["sphinx", "flask-script"]
 
 [[package]]
 category = "main"
@@ -228,7 +252,7 @@ dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-
 watchdog = ["watchdog"]
 
 [metadata]
-content-hash = "6e6be09a943cdb4d2b70204f352b6278a809faba9557ffaac8ef1d032a058f34"
+content-hash = "c53557ea7106f490553c4fdaee38cba097d80ee6522057f3b01f220c4b4f9619"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -243,6 +267,9 @@ attrs = [
 babel = [
     {file = "Babel-2.8.0-py2.py3-none-any.whl", hash = "sha256:d670ea0b10f8b723672d3a6abeb87b565b244da220d76b4dba1b66269ec152d4"},
     {file = "Babel-2.8.0.tar.gz", hash = "sha256:1aac2ae2d0d8ea368fa90906567f5c08463d98ade155c0c4bfedd6a0f7160e38"},
+]
+blinker = [
+    {file = "blinker-1.4.tar.gz", hash = "sha256:471aee25f3992bd325afa3772f1063dbdbbca947a041b8b89466dc00d606f8b6"},
 ]
 click = [
     {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
@@ -259,6 +286,10 @@ flask = [
 flask-babel = [
     {file = "Flask-Babel-1.0.0.tar.gz", hash = "sha256:d6a70468f9a8919d59fba2a291a003da3a05ff884275dddbd965f3b98b09ab3e"},
     {file = "Flask_Babel-1.0.0-py3-none-any.whl", hash = "sha256:247f4ec34cf605d03781f480bccb1a5acb719df1d1a2a743c091ab3db5d5fde2"},
+]
+flask-sitemap = [
+    {file = "Flask-Sitemap-0.3.0.tar.gz", hash = "sha256:a062204e4dfeb1809350dcfc4183348eb6595ac82bba639e49644d0bfc964ecd"},
+    {file = "Flask_Sitemap-0.3.0-py2.py3-none-any.whl", hash = "sha256:3e3c54acc2639d1e415586e7bc315b32873c14f9975d60d95308d3af8dca5c0d"},
 ]
 itsdangerous = [
     {file = "itsdangerous-1.1.0-py2.py3-none-any.whl", hash = "sha256:b12271b2047cb23eeb98c8b5622e2e5c5e9abd9784a153e9d8ef9cb4dd09d749"},
