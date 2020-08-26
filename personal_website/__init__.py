@@ -2,7 +2,7 @@ from flask import Flask
 from flask_babel import Babel
 
 from config import Config
-from posts import add_posts_routes
+from .main.posts import add_posts_routes
 
 babel = Babel()
 

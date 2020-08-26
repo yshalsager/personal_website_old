@@ -1,7 +1,7 @@
 from flask import render_template
 from flask_babel import force_locale
 
-from utils.posts import Post
+from .utils.posts import Post
 
 from pathlib import Path
 from functools import partial

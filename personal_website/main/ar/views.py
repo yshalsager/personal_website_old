@@ -1,7 +1,7 @@
 from flask import render_template, url_for
 from flask_babel import force_locale as force_locale, _
 
-from utils.posts import get_blog_posts
+from ..utils.posts import get_blog_posts
 from .. import main
 
 
