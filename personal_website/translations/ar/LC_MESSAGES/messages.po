@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-08-25 19:43+0200\n"
+"POT-Creation-Date: 2020-08-26 17:58+0200\n"
 "PO-Revision-Date: 2020-08-24 11:52+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ar\n"
@@ -19,18 +19,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: personal_website/main/ar/views.py:19 personal_website/main/en/views.py:30
+#: personal_website/main/ar/views.py:19 personal_website/main/en/views.py:22
+msgid "About Me"
+msgstr "من أنا؟"
+
+#: personal_website/main/ar/views.py:28 personal_website/main/en/views.py:30
 #: personal_website/templates/includes/navbar.html:22
 msgid "Blog"
 msgstr "المدونة"
 
-#: personal_website/main/en/views.py:21
-msgid "About Me"
-msgstr "من أنا؟"
+#: personal_website/templates/about.html:10
+msgid ""
+"Hi there! I'm Youssif (or better known as yshalsager on the internet), "
+"XiaomiFirmwareUpdater\n"
+"                Project Lead\n"
+"                Developer, XDA Recognized Developer, Self-taught "
+"Programmer, and trainee writer at Loghat El-asr\n"
+"                magazine."
+msgstr ""
+"مرحبا! أنا يوسف، أُعرف على الإنترنت ب (yshalsager). أنا المطور الرئيسي "
+"لمشروع XiaomiFirmwareUpdater، ومطور بايثون، وكاتب تقني تحت التدريب بمجلة "
+"لغة العصر (مصر)."
 
-#: personal_website/main/en/views.py:22
-msgid "This is what I do"
-msgstr "هذا ما أفعله"
+#: personal_website/templates/about.html:14
+#, python-format
+msgid ""
+"I've been coding in Python since 2018, mostly for web scraping, "
+"automation, chat bots, and\n"
+"                building\n"
+"                other cool <a href=\"/%(lang)s/projects/\">projects</a> "
+"(most of them are open-source and available on\n"
+"                GitHub).<br/><br/>\n"
+"                Also, I've been tinkering with Android software "
+"development since 2014, building mods,\n"
+"                custom recoveries, and custom ROMs for Android devices. "
+"You can find my android related works on <a\n"
+"                        href=\"https://forum.xda-"
+"developers.com/member.php?u=6084385\">XDA-Developers Forums</a>."
+msgstr ""
+"منذ 2018 وأنا أقوم بتطوير الأدوات والبرامج وبعض المواقع بلغة بايثون، "
+"وحاليا أركز بشكل كبير على الأتمتة والبوتات وال web scraping. أغلب مشاريعي"
+" مفتوحة المصدر ومتاحة على موقع GitHub <a "
+"href=\"/%(lang)s/projects/\">هنا</a>.<br/><br/>أيضا أقوم بشكل مستمر "
+"بالتعديل على هواتف أندرويد وتطوير الرومات المعدلة منذ 2014، جميع أعمالي "
+"متاحة على <a href=\"https://forum.xda-"
+"developers.com/member.php?u=6084385\">موقع XDA-Developers.</a>"
+
+#: personal_website/templates/about.html:24
+#, python-format
+msgid ""
+"You can checkout my projects <a href=\"/%(lang)s/projects/\">here</a>, "
+"and if you would like to contact me\n"
+"                here's <a href=\"/%(lang)s/contact/\">how to reach me "
+"out</a>."
+msgstr ""
+"يمكنك الإطلاع على قائمة مشاريعي <a href=\"/%(lang)s/projects/\">هنا</a>، "
+"وإذا رغبت في التواصل معي فيمكنك معرفة كيفية القيام بذلك <a "
+"href=\"/%(lang)s/contact/\">من هنا</a>."
 
 #: personal_website/templates/error.html:2
 msgid "An Error Occurred"
@@ -53,12 +98,14 @@ msgid "Youssif Shaaban Alsager (yshalsager)"
 msgstr "يوسف شعبان الصغير (yshalsager)"
 
 #: personal_website/templates/index.html:12
-msgid "Hi, I'm Youssif Shaaban Alsager"
+msgid "Hi, I'm Youssif Shaaban Alsager."
 msgstr "مرحبا! أنا يوسف شعبان الصغير."
 
 #: personal_website/templates/index.html:13
-msgid "Python Developer, XDA Recognized Developer, and Technical Writer."
-msgstr "مطور بايثون وكاتب تقني."
+msgid ""
+"Python Developer, XDA Recognized Developer, and Technical\n"
+"                        Translator/Writer."
+msgstr "مطور بايثون وكاتب/مترجم تقني."
 
 #: personal_website/templates/includes/footer.html:55
 msgid "Copyright &copy; yshalsager"

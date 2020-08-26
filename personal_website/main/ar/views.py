@@ -11,6 +11,15 @@ def index_ar():
         return render_template('index.html', lang="ar")
 
 
+@main.route('/ar/about')
+def about_ar():
+    with force_locale('ar'):
+        return render_template('about.html',
+                               lang="ar",
+                               heading=_("About Me"),
+                               image=url_for('static', filename='img/home-bg.jpg'))
+
+
 @main.route('/ar/blog')
 def blog_ar():
     posts = get_blog_posts('ar')

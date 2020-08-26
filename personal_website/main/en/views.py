@@ -20,7 +20,6 @@ def about_en():
     return render_template('about.html',
                            lang="en",
                            heading=_("About Me"),
-                           subheading=_("This is what I do"),
                            image=url_for('static', filename='img/home-bg.jpg'))
 
 
