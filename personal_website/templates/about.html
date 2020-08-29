@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}About me{% endblock %}
+{% block title %}{{heading}}{% endblock %}
 
 
 {% block content %}
@@ -13,7 +13,7 @@
                 magazine.') }}</p>
             <p>{{ _('I\'ve been coding in Python since 2018, mostly for web scraping, automation, chat bots, and
                 building
-                other cool <a href="/%(lang)s/projects/">projects</a> (most of them are open-source and available on
+                other cool <a href="/%(lang)s/projects">projects</a> (most of them are open-source and available on
                 GitHub).<br/><br/>
                 Also, I\'ve been tinkering with Android software development since 2014, building mods,
                 custom recoveries, and custom ROMs for Android devices. You can find my android related works on <a
@@ -21,8 +21,8 @@
                 lang=lang)
                 }}</p>
             <p>
-                {{ _('You can checkout my projects <a href="/%(lang)s/projects/">here</a>, and if you would like to contact me
-                here\'s <a href="/%(lang)s/contact/">how to reach me out</a>.', lang=lang) }}
+                {{ _('You can checkout my projects <a href="/%(lang)s/projects">here</a>, and if you would like to contact me
+                here\'s <a href="/%(lang)s/contact">how to reach me out</a>.', lang=lang) }}
             </p>
         </div>
     </div>
