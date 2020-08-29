@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-08-29 18:01+0200\n"
+"POT-Creation-Date: 2020-08-29 21:53+0200\n"
 "PO-Revision-Date: 2020-08-24 11:52+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ar\n"
@@ -29,7 +29,7 @@ msgid "Blog"
 msgstr "المدونة"
 
 #: personal_website/main/ar/views.py:38 personal_website/main/en/views.py:40
-msgid "My Projects"
+msgid "My Works and Projects"
 msgstr "أعمالي ومشاريعي"
 
 #: personal_website/templates/about.html:10
@@ -51,7 +51,7 @@ msgid ""
 "I've been coding in Python since 2018, mostly for web scraping, "
 "automation, chat bots, and\n"
 "                building\n"
-"                other cool <a href=\"/%(lang)s/projects/\">projects</a> "
+"                other cool <a href=\"/%(lang)s/projects\">projects</a> "
 "(most of them are open-source and available on\n"
 "                GitHub).<br/><br/>\n"
 "                Also, I've been tinkering with Android software "
@@ -64,7 +64,7 @@ msgstr ""
 "منذ 2018 وأنا أقوم بتطوير الأدوات والبرامج وبعض المواقع بلغة بايثون، "
 "وحاليا أركز بشكل كبير على الأتمتة والبوتات وال web scraping. أغلب مشاريعي"
 " مفتوحة المصدر ومتاحة على موقع GitHub <a "
-"href=\"/%(lang)s/projects/\">هنا</a>.<br/><br/>أيضا أقوم بشكل مستمر "
+"href=\"/%(lang)s/projects\">هنا</a>.<br/><br/>أيضا أقوم بشكل مستمر "
 "بالتعديل على هواتف أندرويد وتطوير الرومات المعدلة منذ 2014، جميع أعمالي "
 "متاحة على <a href=\"https://forum.xda-"
 "developers.com/member.php?u=6084385\">موقع XDA-Developers.</a>"
@@ -72,14 +72,14 @@ msgstr ""
 #: personal_website/templates/about.html:24
 #, python-format
 msgid ""
-"You can checkout my projects <a href=\"/%(lang)s/projects/\">here</a>, "
-"and if you would like to contact me\n"
-"                here's <a href=\"/%(lang)s/contact/\">how to reach me "
+"You can checkout my projects <a href=\"/%(lang)s/projects\">here</a>, and"
+" if you would like to contact me\n"
+"                here's <a href=\"/%(lang)s/contact\">how to reach me "
 "out</a>."
 msgstr ""
-"يمكنك الإطلاع على قائمة مشاريعي <a href=\"/%(lang)s/projects/\">هنا</a>، "
+"يمكنك الإطلاع على قائمة مشاريعي <a href=\"/%(lang)s/projects\">هنا</a>، "
 "وإذا رغبت في التواصل معي فيمكنك معرفة كيفية القيام بذلك <a "
-"href=\"/%(lang)s/contact/\">من هنا</a>."
+"href=\"/%(lang)s/contact\">من هنا</a>."
 
 #: personal_website/templates/blog.html:25
 msgid "Older Posts"
@@ -115,7 +115,26 @@ msgid ""
 "                        Translator/Writer."
 msgstr "مطور بايثون وكاتب/مترجم تقني."
 
-#: personal_website/templates/projects.html:10
+#: personal_website/templates/projects.html:11
+msgid "Quick Navigate"
+msgstr "التنقل السريع"
+
+#: personal_website/templates/projects.html:13
+#: personal_website/templates/projects.html:22
+msgid "Programming"
+msgstr "البرمجة"
+
+#: personal_website/templates/projects.html:16
+#: personal_website/templates/projects.html:115
+msgid "Android Software Development"
+msgstr "تطوير نظام أندرويد"
+
+#: personal_website/templates/projects.html:18
+#: personal_website/templates/projects.html:171
+msgid "Technical Writing and Translation"
+msgstr "الكتابة والترجمة التقنية"
+
+#: personal_website/templates/projects.html:23
 msgid ""
 "Most of my projects are open-source and available on <a\n"
 "                    href=\"https://github.com/yshalsager\">GitHub</a>, "
@@ -125,11 +144,11 @@ msgstr ""
 "                    href=\"https://github.com/yshalsager\">GitHub</a>، "
 "وهذه أبرز المشاريع التي عملت عليها:"
 
-#: personal_website/templates/projects.html:14
+#: personal_website/templates/projects.html:27
 msgid "Xiaomi Firmware Updater"
 msgstr "محدث البرامج الثابتة لهواتف شاومي"
 
-#: personal_website/templates/projects.html:15
+#: personal_website/templates/projects.html:28
 msgid ""
 "My most\n"
 "                        well-known project that aims to provide firmware "
@@ -152,8 +171,9 @@ msgid ""
 "                        many other websites."
 msgstr ""
 "أكثر مشروعاتي شهرة، والذي يهدف إلى توفير حزم البرامج الثابتة الخاصة "
-"بهواتف شاومي بشكل يسير لمستخدمتي الرومات المعدلة. وقد قامت العديد من المواقع "
-"التقنية الأكثر شهرة على مستوي العالم بالكتابة حول المشروع مثل <a\n"
+"بهواتف شاومي بشكل يسير لمستخدمتي الرومات المعدلة. وقد قامت العديد من "
+"المواقع التقنية الأكثر شهرة على مستوي العالم بالكتابة حول المشروع مثل <a"
+"\n"
 "                                href=\"https://www.xda-developers.com"
 "/xiaomi-firmware-updater-tool-miui-roms/\"\n"
 "                        >XDA</a>، و <a "
@@ -169,45 +189,50 @@ msgstr ""
 "/projects-week-november-5-2018/\">SourceForge</a>، والعديد من المواقع "
 "الأخرى."
 
-#: personal_website/templates/projects.html:25
+#: personal_website/templates/projects.html:38
 msgid ""
 "This project is a big umbrella for many sub-projects such\n"
 "                        as"
 msgstr "ويعد هذا المشروع بمثابة مظلة كبيرة تحتها عدد من المشاريع الفرعية مثل"
 
-#: personal_website/templates/projects.html:30
+#: personal_website/templates/projects.html:43
 msgid ""
 "MIUI\n"
 "                                    Updates\n"
 "                                    Tracker"
 msgstr "متتبع تحديثات MIUI"
 
-#: personal_website/templates/projects.html:32
+#: personal_website/templates/projects.html:45
 msgid ""
 "Provides Xiaomi devices users with the largest archive\n"
 "                                of official\n"
 "                                ROMs and tracks the latest ROMs to notify"
 " users on various social channels with updates\n"
 "                                notifications on time."
-msgstr "والذي يقدم للمستخدمين أكبر أرشيف لرومات هواتف شاومي الرسمية ويقوم بتتبع الإصدارات الجديدة وإرسال تنبيهات للمستخدمين على عدد من منصات التواصل بالتحديثات الجديدة وقت صدورها"
+msgstr ""
+"والذي يقدم للمستخدمين أكبر أرشيف لرومات هواتف شاومي الرسمية ويقوم بتتبع "
+"الإصدارات الجديدة وإرسال تنبيهات للمستخدمين على عدد من منصات التواصل "
+"بالتحديثات الجديدة وقت صدورها"
 
-#: personal_website/templates/projects.html:41
+#: personal_website/templates/projects.html:54
 msgid "Xiaomi Flashable Firmware Creator"
 msgstr "منشئ حزم البرامج الثابتة"
 
-#: personal_website/templates/projects.html:41
+#: personal_website/templates/projects.html:54
 msgid ""
 "A tool that generates\n"
 "                                flashable\n"
 "                                firmware-update packages from official "
 "MIUI ROMS. Available as a GUI and CLI tool."
-msgstr "أداة تقوم باستخراج البرامج الثابتة من بالتحديثات الرسمية لهواتف شاومي، وهي متاحة كأداة ذات واجهة رسومية ونسخة لسطر الأوامر."
+msgstr ""
+"أداة تقوم باستخراج البرامج الثابتة من بالتحديثات الرسمية لهواتف شاومي، "
+"وهي متاحة كأداة ذات واجهة رسومية ونسخة لسطر الأوامر."
 
-#: personal_website/templates/projects.html:49
+#: personal_website/templates/projects.html:62
 msgid "Xiaomi Geeks Chat Bot"
 msgstr "بوت مهووسي شاومي"
 
-#: personal_website/templates/projects.html:49
+#: personal_website/templates/projects.html:62
 msgid ""
 "An all-in-one chatbot that provides\n"
 "                                easy access for\n"
@@ -217,26 +242,32 @@ msgid ""
 "firmware. Currently Available on Telegram and\n"
 "                                Discord only, but more platforms support "
 "to come soon."
-msgstr "بوت دردشة يتيح لمستخدمتي لهواتف شاومي الوصول السريع لمختلف الأشياء التي يحتاجها أي مستخدم. بداية من الشروحات والأدوات وحتى الأمور المتقدمة مثل الريكفري المعدل وحزم البرامج الثابتة. حاليا البوت متاح على منصتي تيليجرام ودسكورد وقريبا سيدعم المزيد من منصات ومواقع التواصل."
+msgstr ""
+"بوت دردشة يتيح لمستخدمتي لهواتف شاومي الوصول السريع لمختلف الأشياء التي "
+"يحتاجها أي مستخدم. بداية من الشروحات والأدوات وحتى الأمور المتقدمة مثل "
+"الريكفري المعدل وحزم البرامج الثابتة. حاليا البوت متاح على منصتي تيليجرام"
+" ودسكورد وقريبا سيدعم المزيد من منصات ومواقع التواصل."
 
-#: personal_website/templates/projects.html:59
+#: personal_website/templates/projects.html:72
 msgid "Xiaomi Certification Tracker"
 msgstr "متتبع تراخيص أجهزة شاومي"
 
-#: personal_website/templates/projects.html:59
+#: personal_website/templates/projects.html:72
 msgid ""
 "A set of web scrapers that\n"
 "                                gather Xiaomi\n"
 "                                products certification info from various "
 "websites like TENAA, FCCID, BIS, TÜV SÜD,\n"
 "                                etc."
-msgstr "عدد من كاشطات الويب التي تقوم بتجميع معلومات التراخيص الخاصة بالأجهزة التي تقوم شاومي بتسجيلها قبل إطلاقها بشكل رسمي."
+msgstr ""
+"عدد من كاشطات الويب التي تقوم بتجميع معلومات التراخيص الخاصة بالأجهزة "
+"التي تقوم شاومي بتسجيلها قبل إطلاقها بشكل رسمي."
 
-#: personal_website/templates/projects.html:68
+#: personal_website/templates/projects.html:81
 msgid "Android Trackers Project"
 msgstr "مشروع متتبعات أندرويد"
 
-#: personal_website/templates/projects.html:69
+#: personal_website/templates/projects.html:82
 msgid ""
 "A project that\n"
 "                        tracks various stuff that is related to Android "
@@ -277,11 +308,11 @@ msgstr ""
 "                                href=\"https://github.com/androidtrackers"
 "/netflix-devices\">الهواتف المدعومة من نتفليكس</a>."
 
-#: personal_website/templates/projects.html:85
+#: personal_website/templates/projects.html:98
 msgid "Android OEM software updates tracker"
 msgstr "مشروع متتبع تحديثات أجهزة أندرويد الرسمية"
 
-#: personal_website/templates/projects.html:87
+#: personal_website/templates/projects.html:100
 msgid ""
 "Similar to MIUI Updates Tracker, this project tracks new software updates"
 " from Android\n"
@@ -299,11 +330,11 @@ msgstr ""
 "                                "
 "href=\"https://realmeupdater.com/\">Realme</a>."
 
-#: personal_website/templates/projects.html:95
+#: personal_website/templates/projects.html:108
 msgid "Samsung Firmware Bot"
 msgstr "بوت رومات هواتف سامسونج"
 
-#: personal_website/templates/projects.html:97
+#: personal_website/templates/projects.html:110
 msgid ""
 "A telegram bot to check for and upload Samsung firmware using SamFirm "
 "tool."
@@ -311,7 +342,7 @@ msgstr ""
 "بوت يعمل على منصة تيليجرام يقوم بالتحقق من تحديثات أجهزة سامسونج التي "
 "تعمل بنظام أندرويد كما يوفر إمكانية رفع هذا التحديثات إلى سيرفر مخصص."
 
-#: personal_website/templates/projects.html:102
+#: personal_website/templates/projects.html:116
 msgid ""
 "Also, I have a good history of Android software development since 2014 on"
 " <a\n"
@@ -324,11 +355,11 @@ msgstr ""
 "developers.com/member.php?u=6084385\">منتدي XDA-Developers</a>.<br>\n"
 "                وهذه بعض أعمالي السابقة:"
 
-#: personal_website/templates/projects.html:108
+#: personal_website/templates/projects.html:122
 msgid "Android Custom ROMs development"
 msgstr "تطوير رومات أندرويد المعدلة"
 
-#: personal_website/templates/projects.html:108
+#: personal_website/templates/projects.html:122
 msgid ""
 "I used to be involved in the\n"
 "                        development of Android\n"
@@ -383,11 +414,11 @@ msgstr ""
 "rom-9-0-t3837127\">BenzoROM</a>)\n"
 "                        لفترة طويلة من الوقت."
 
-#: personal_website/templates/projects.html:127
+#: personal_website/templates/projects.html:141
 msgid "Custom Recovery ports"
 msgstr "تطوير الريكفري المعدل"
 
-#: personal_website/templates/projects.html:127
+#: personal_website/templates/projects.html:141
 msgid ""
 "I have ported Custom recovery like <a\n"
 "                            href=\"https://github.com/TeamWin/\">TWRP</a>"
@@ -417,7 +448,7 @@ msgid ""
 "                            "
 "href=\"https://github.com/TwrpBuilder\">TwrpBuilder</a> project."
 msgstr ""
-"قمت بعمل port أو بناء ريكفري معدل مثل <a\n"
+"قمت بعمل port أو البناء من المصدر للريكفري المعدل مثل <a\n"
 "                            href=\"https://github.com/TeamWin/\">TWRP</a>"
 " و<a\n"
 "                            "
@@ -447,7 +478,7 @@ msgstr ""
 "                            "
 "href=\"https://github.com/TwrpBuilder\">TwrpBuilder</a>."
 
-#: personal_website/templates/projects.html:146
+#: personal_website/templates/projects.html:160
 msgid ""
 "<a "
 "href=\"https://github.com/chenxiaolong/DualBootPatcher\">DualBootPatcher</a>"
@@ -457,7 +488,7 @@ msgstr ""
 "بعض المساهمات في مشروع <a "
 "href=\"https://github.com/chenxiaolong/DualBootPatcher\">DualBootPatcher</a></b>"
 
-#: personal_website/templates/projects.html:148
+#: personal_website/templates/projects.html:162
 msgid ""
 "When DualBootPatcher project was actively under development I used to do "
 "some\n"
@@ -481,6 +512,38 @@ msgstr ""
 "وXiaomi Mi 6 وMi\n"
 "                        4S وRedmi 4A، وRedmi Pro، وOnePlus 5، وSamsung "
 "Galaxy S8/S8+/Note 8 (نسخة Exynos)."
+
+#: personal_website/templates/projects.html:172
+msgid ""
+"I'm an English Translation senior student currently. I have a good "
+"experience in translating\n"
+"                various technical stuff into Arabic. You can find a "
+"partial list of the translations done by me <a\n"
+"                        href=\"https://github.com/yshalsager-"
+"localizations/Index\">here</a>."
+msgstr ""
+"حاليًا، أنا طالب بالسنة النهائية في كلية اللغات والترجمة قسم اللغة "
+"الإنجليزية، ولدي خبرة جيدة في ترجمة مختلف الأمور التقنية من الإنجليزية "
+"إلى العربية. يمكنك الإطلاع على قائمة غير مكتملة بمشاريع الترجمة التي عملت"
+" عليها <a\n"
+"                        href=\"https://github.com/yshalsager-"
+"localizations/Index\">هنا</a>."
+
+#: personal_website/templates/projects.html:175
+msgid ""
+"Also, I have been writing at Loghat Al-Asr magazine (Al-Ahram, Egypt) "
+"since 2015 as a part\n"
+"                of their internship for undergraduate students.<br>As of "
+"July 2020, my published articles are more than\n"
+"                70 articles, which can be found <a\n"
+"                        "
+"href=\"https://drive.google.com/file/d/1qpBAYudAw_LM2bicHGQ1PgiKoFk_lf2r/view?usp=sharing\">here</a>."
+msgstr ""
+"وإلى جانب ذلك، فأنا أقوم بالكتابة بشكل مستمر في مجلة لغة العصر التابعة "
+"لمؤسسة الأهرام بمصر منذ 2015 كجزء من برنامجهم التدريبي للطلبة غير "
+"الخرييجين. <br>لدي بالمجلة المطبوعة (حتى شهر يوليو 2020) أكثر من 70 موضوع"
+" منشور يمكن الإطلاع عليهم <a "
+"href=\"https://drive.google.com/file/d/1qpBAYudAw_LM2bicHGQ1PgiKoFk_lf2r/view?usp=sharing\">هنا</a>."
 
 #: personal_website/templates/includes/footer.html:56
 msgid "Copyright &copy; yshalsager"

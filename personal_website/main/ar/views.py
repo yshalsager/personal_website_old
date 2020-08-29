@@ -35,6 +35,6 @@ def blog_ar():
 def projects_ar():
     with force_locale('ar'):
         return render_template('projects.html',
-                               heading=_("My Projects"),
+                               heading=_("My Works and Projects"),
                                lang="ar",
                                image=url_for('static', filename='img/home-bg.jpg'))

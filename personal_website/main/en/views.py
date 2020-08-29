@@ -37,5 +37,5 @@ def blog_en():
 def projects_en():
     return render_template('projects.html',
                            lang="en",
-                           heading=_("My Projects"),
+                           heading=_("My Works and Projects"),
                            image=url_for('static', filename='img/home-bg.jpg'))
