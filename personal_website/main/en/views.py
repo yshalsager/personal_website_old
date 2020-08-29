@@ -31,3 +31,11 @@ def blog_en():
                            image=url_for('static', filename='img/home-bg.jpg'),
                            lang='en',
                            posts=posts)
+
+
+@main.route('/en/projects')
+def projects_en():
+    return render_template('projects.html',
+                           lang="en",
+                           heading=_("My Projects"),
+                           image=url_for('static', filename='img/home-bg.jpg'))

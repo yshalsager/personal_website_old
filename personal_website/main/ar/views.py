@@ -29,3 +29,12 @@ def blog_ar():
                                image=url_for('static', filename='img/home-bg.jpg'),
                                lang='ar',
                                posts=posts)
+
+
+@main.route('/ar/projects')
+def projects_ar():
+    with force_locale('ar'):
+        return render_template('projects.html',
+                               heading=_("My Projects"),
+                               lang="ar",
+                               image=url_for('static', filename='img/home-bg.jpg'))
