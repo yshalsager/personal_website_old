@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-08-29 21:53+0200\n"
+"POT-Creation-Date: 2020-08-29 23:07+0200\n"
 "PO-Revision-Date: 2020-08-24 11:52+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ar\n"
@@ -19,18 +19,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: personal_website/main/ar/views.py:19 personal_website/main/en/views.py:22
+#: personal_website/main/ar/views.py:18 personal_website/main/en/views.py:21
 msgid "About Me"
 msgstr "من أنا؟"
 
-#: personal_website/main/ar/views.py:28 personal_website/main/en/views.py:30
+#: personal_website/main/ar/views.py:25 personal_website/main/en/views.py:27
 #: personal_website/templates/includes/navbar.html:22
 msgid "Blog"
 msgstr "المدونة"
 
-#: personal_website/main/ar/views.py:38 personal_website/main/en/views.py:40
+#: personal_website/main/ar/views.py:33 personal_website/main/en/views.py:35
 msgid "My Works and Projects"
 msgstr "أعمالي ومشاريعي"
+
+#: personal_website/main/ar/views.py:40 personal_website/main/en/views.py:40
+msgid "Hi yshalsager, I came across your website and would like to get in touch."
+msgstr "مرحبا يوسف، أرغب في التواصل معك بشأن "
+
+#: personal_website/main/ar/views.py:42 personal_website/main/en/views.py:42
+msgid "Contact Me"
+msgstr "تواصل معي"
 
 #: personal_website/templates/about.html:10
 msgid ""
@@ -85,6 +93,39 @@ msgstr ""
 msgid "Older Posts"
 msgstr "التدوينات الأقدم"
 
+#: personal_website/templates/contact.html:8
+msgid ""
+"I'm very open to messages, so, if you want to get in touch you send me a "
+"message using any of the methods\n"
+"                below and I will get back to you as soon as possible as "
+"long as you don't ask to ask and express your\n"
+"                intent clearly."
+msgstr ""
+"أرحب جدًا بالتواصل إذا كان لديك ما تود النقاش بشأنه. يمكنك استخدام أي من "
+"الطرق الموجودة بالأسفل وسأكون سعيدًا بالرد عليك في أقرب وقت ممكن طالما "
+"تسأل بشكل مباشر أو تعبر عما تريد بشكل واضح."
+
+#: personal_website/templates/contact.html:14
+msgid "Telegram"
+msgstr "تيليجرام"
+
+#: personal_website/templates/contact.html:14
+msgid ""
+"I usually respond\n"
+"                        faster to Telegram since it's my favourite social"
+" platform."
+msgstr "غالبا ما أكون أسرع في الرد على تيليجرام بما أنه منصة التواصل المفضلة لدي."
+
+#: personal_website/templates/contact.html:21
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: personal_website/templates/contact.html:21
+msgid "For traditional email you can click the link to send me a message."
+msgstr ""
+"إذا كنت ترغب في استخدام البريد الإلكتروني التقليدي للتواصل يمكنك الضغط "
+"على الرابط لإرسال رسالة لي."
+
 #: personal_website/templates/error.html:2
 msgid "An Error Occurred"
 msgstr "لقد حدث خطأ ما"
@@ -105,11 +146,11 @@ msgstr "خطأ غير معروف"
 msgid "Youssif Shaaban Alsager (yshalsager)"
 msgstr "يوسف شعبان الصغير (yshalsager)"
 
-#: personal_website/templates/index.html:12
+#: personal_website/templates/index.html:13
 msgid "Hi, I'm Youssif Shaaban Alsager."
 msgstr "مرحبا! أنا يوسف شعبان الصغير."
 
-#: personal_website/templates/index.html:13
+#: personal_website/templates/index.html:14
 msgid ""
 "Python Developer, XDA Recognized Developer, and Technical\n"
 "                        Translator/Writer."
