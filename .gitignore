@@ -42,6 +42,9 @@ nosetests.xml
 venv
 .python-version
 
+# mod_wsgi
+*.wsgi
+
 # IDE
 .idea/
 .vscode/

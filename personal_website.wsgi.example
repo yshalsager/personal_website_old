@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+import logging
+import sys
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"/path/to/yshalsager_website")
+sys.path.insert(0,"/path/to/yshalsager_website/venv/lib/python3.6/site-packages")
+from personal_website import create_app
+application = create_app()
