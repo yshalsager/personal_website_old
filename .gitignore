@@ -40,6 +40,7 @@ nosetests.xml
 
 # Virtual environment
 venv
+.python-version
 
 # IDE
 .idea/
@@ -47,3 +48,4 @@ venv
 
 # Others
 node_modules
+logs/
