@@ -41,6 +41,13 @@
     <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
     {%- endblock styles %}
     {%- endblock head %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178397299-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-178397299-1');
+    </script>
 </head>
 <body{% block body_attribs %}{% if body_class %} class={{body_class}}{% endif %}{% endblock body_attribs %}>
 {% block body -%}
