@@ -11,6 +11,7 @@ class Post:
     description: str
     tags: str
     date: str
+    image: str
 
     _content_pattern = r'---[\s\S]+---\n'
     _attributes_pattern = r'(\w+)(?:: )(.*)'

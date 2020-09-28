@@ -12,7 +12,7 @@ from ..main import main
 
 def render(lang, post: Post):
     return render_template('post.html', lang=lang, content=post.html, title=post.title,
-                           description=post.description, date=post.date)
+                           description=post.description, date=post.date, image=post.image)
 
 
 def render_func(lang, post: Post):
