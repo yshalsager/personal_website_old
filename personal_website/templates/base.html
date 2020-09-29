@@ -19,7 +19,9 @@
     {%- block metas %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {%- block description %}
     <meta name="description" content="{% if lang == 'ar' %}مطور بايثون وكاتب/مترجم تقني.{% else %}Python Developer, XDA Recognized Developer, and Technical Translator/Writer.{% endif %}">
+    {%- endblock description %}
     <meta name="author" content="yshalsager">
     {%- endblock metas %}
     <title>{% block title %}{{title|default}}{% endblock title %}</title>
