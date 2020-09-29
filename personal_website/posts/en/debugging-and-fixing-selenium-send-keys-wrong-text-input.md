@@ -3,7 +3,7 @@ title: Debugging and fixing Selenium's send_keys() wrong text input
 description: I recently faced a weird problem while working on a freelance Selenium project in Python which is: send_keys method is sending random wrong input. Here are the details of the problem, how did I debug it and how I manged to fix after hours of investigating!
 tag: Python
 date: 28-09-2020
-image: /static/img/debugging-and-fixing-selenium-send-keys-wrong-text-input.png
+image: /static/img/posts/en/debugging-and-fixing-selenium-send-keys-wrong-text-input/Main.png
 ---
 *There are many kinds of bugs you may face while programming, but without a doubt, ghost bugs are the worse!*
 
