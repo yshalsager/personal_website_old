@@ -1,0 +1,16 @@
+[Unit]
+Description=yshalsager_website
+After=network.target
+
+[Service]
+# Base settings
+Type=simple
+Restart=on-failure
+# Execution parameters
+User=yshalsager
+Group=yshalsager
+WorkingDirectory=/path/to/yshalsager_website
+ExecStart=/path/to/yshalsager_website/venv/bin/python3 server.py
+
+[Install]
+WantedBy=multi-user.target
