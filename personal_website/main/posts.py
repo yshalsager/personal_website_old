@@ -26,7 +26,7 @@ def add_posts_routes(app):
     posts_dir = Path(__file__).parents[1] / Path(app.config['POSTS_DIR'])
     for lang in app.config['LANGUAGES']:
         for file in posts_dir.glob(f'{lang}/*.md'):
-            app.add_url_rule(f'/{lang}/{file.stem}',
+            app.add_url_rule(f'/{lang}/blog/{file.stem}',
                              file.stem,
                              partial(render_func, lang, Post(file))
                              )
