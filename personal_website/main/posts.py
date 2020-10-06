@@ -32,7 +32,7 @@ def add_posts_routes(app):
                              )
 
 
-@main.route('/<lang>/rss')
+@main.route('/<lang>/blog/rss')
 def rss(lang):
     posts = get_blog_posts(lang)
     fg = FeedGenerator()
@@ -45,7 +45,7 @@ def rss(lang):
     for post in posts:
         fe = fg.add_entry()
         fe.title(post.title)
-        fe.link(href=f"{current_app.config['DOMAIN']}/{lang}/{post.file.stem}")
+        fe.link(href=f"{current_app.config['DOMAIN']}/{lang}/blog/{post.file.stem}")
         fe.description(post.html)
         fe.pubDate(datetime.combine(datetime.strptime(post.date, "%d-%m-%Y"), datetime.min.time(), tzinfo=timezone.utc))
 
