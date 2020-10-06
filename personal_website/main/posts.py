@@ -3,7 +3,7 @@ from functools import partial
 from pathlib import Path
 
 from feedgen.feed import FeedGenerator
-from flask import render_template, make_response, request
+from flask import render_template, make_response, request, current_app
 from flask_babel import force_locale
 
 from .utils.posts import Post, get_blog_posts
@@ -38,13 +38,14 @@ def rss(lang):
     fg = FeedGenerator()
     fg.title('مدونة يوسف شعبان' if lang == 'ar' else 'yshalsager Blog')
     fg.description('آخر التدوينات على مدونتي' if lang == 'ar' else 'Latest Feeds from my blog')
-    fg.link(href=request.host_url, rel='alternate')
+    fg.link(href=current_app.config['DOMAIN'], rel='alternate')
+    fg.logo(f"{current_app.config['DOMAIN']}/static/img/logo.svg")
     fg.language(lang)
 
     for post in posts:
         fe = fg.add_entry()
         fe.title(post.title)
-        fe.link(href=f"{request.host_url}{lang}/{post.file.stem}")
+        fe.link(href=f"{current_app.config['DOMAIN']}/{lang}/{post.file.stem}")
         fe.description(post.html)
         fe.pubDate(datetime.combine(datetime.strptime(post.date, "%d-%m-%Y"), datetime.min.time(), tzinfo=timezone.utc))
 

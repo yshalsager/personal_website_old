@@ -15,3 +15,5 @@ class Config:
     WWW_LOG_NAME = "www.log"
     LOG_MAX_BYTES = 100000000
     LOG_COPIES = 5
+    # Domain
+    DOMAIN = "https://yshalsager.me"
