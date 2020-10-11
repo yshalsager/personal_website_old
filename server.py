@@ -1,3 +1,5 @@
+from cheroot.wsgi import Server
+
 from personal_website import create_app
 
 import cherrypy
@@ -5,9 +7,8 @@ import cherrypy
 app = create_app()
 
 cherrypy.tree.graft(app, '/')
-cherrypy.config.update({'server.socket_host': '127.0.0.1',
-                        'server.socket_port': 5000,
-                        'engine.autoreload.on': True})
+cherrypy.config.update({'engine.autoreload.on': True})
+server = Server(('127.0.0.1', 5000), cherrypy.tree, server_name='XFU/1.1.0')
 
 if __name__ == '__main__':
-    cherrypy.engine.start()
+    server.start()
