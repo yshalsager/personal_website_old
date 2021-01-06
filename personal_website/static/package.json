@@ -1,7 +1,7 @@
 {
     "title": "Clean Blog",
     "name": "startbootstrap-clean-blog",
-    "version": "5.0.9",
+    "version": "5.0.10",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
@@ -14,7 +14,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/themes/clean-blog",
+    "homepage": "https://startbootstrap.com/theme/clean-blog",
     "bugs": {
         "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog/issues",
         "email": "feedback@startbootstrap.com"
@@ -22,7 +22,7 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "David Miller (https://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
