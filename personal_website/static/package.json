@@ -29,15 +29,14 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.15.1",
+        "@fortawesome/fontawesome-free": "^5.15.2",
         "axios": "^0.21.1",
-        "bootstrap": "^4.5.3",
-        "bootstrap-v4-rtl": "^4.5.2-1",
-        "ini": "^2.0.0",
+        "bootstrap": "^4.6.0",
+        "bootstrap-v4-rtl": "^4.6.0-1",
         "jquery": "3.5.1"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.13",
+        "browser-sync": "^2.26.14",
         "del": "6.0.0",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "7.0.1",
