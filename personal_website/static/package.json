@@ -33,7 +33,7 @@
         "axios": "^0.21.1",
         "bootstrap": "^4.6.0",
         "bootstrap-v4-rtl": "^4.6.0-1",
-        "jquery": "3.5.1"
+        "jquery": "3.6.0"
     },
     "devDependencies": {
         "browser-sync": "^2.26.14",
