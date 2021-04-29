@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: friday
+    time: "03:00"
+    timezone: Africa/Cairo
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/personal_website/static"
+  schedule:
+    interval: weekly
+    day: friday
+    time: "03:00"
+    timezone: Africa/Cairo
+  open-pull-requests-limit: 10
