@@ -58,7 +58,7 @@ testing = ["pytest (>=4.6.6)", "pytest-mock (>=1.11.0)", "pytest-sugar (>=0.9.3)
 
 [[package]]
 name = "cherrypy"
-version = "18.6.0"
+version = "18.6.1"
 description = "Object-Oriented HTTP framework"
 category = "main"
 optional = false
@@ -69,16 +69,16 @@ cheroot = ">=8.2.1"
 "jaraco.collections" = "*"
 more-itertools = "*"
 portend = ">=2.1.1"
-pywin32 = {version = "*", markers = "sys_platform == \"win32\""}
+pywin32 = {version = ">=227", markers = "sys_platform == \"win32\" and implementation_name == \"cpython\" and python_version < \"3.10\""}
 "zc.lockfile" = "*"
 
 [package.extras]
-docs = ["sphinx", "docutils", "alabaster", "rst.linker (>=1.11)", "jaraco.packaging (>=3.2)"]
+docs = ["sphinx", "docutils", "alabaster", "sphinxcontrib-apidoc (>=0.3.0)", "rst.linker (>=1.11)", "jaraco.packaging (>=3.2)", "setuptools"]
 json = ["simplejson"]
 memcached_session = ["python-memcached (>=1.58)"]
 routes_dispatcher = ["routes (>=2.3.1)"]
 ssl = ["pyopenssl"]
-testing = ["coverage", "codecov", "objgraph", "pytest (>=5.3.5,<5.4.0)", "pytest-cov", "pytest-sugar", "backports.unittest-mock", "path.py", "requests-toolbelt", "pytest-services (>=2)"]
+testing = ["coverage", "codecov", "objgraph", "pytest (>=5.3.5)", "pytest-cov", "pytest-forked", "pytest-sugar", "path.py", "requests-toolbelt", "pytest-services (>=2)", "setuptools"]
 xcgi = ["flup"]
 
 [[package]]
@@ -524,7 +524,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "83ac087c7032d6ee1fa7018f619178c9ec9e385c1302845a999a54af77a0ab2a"
+content-hash = "73fac7445a361830a349e97b1448f1c70347b5596b356d451c3f18197c87e082"
 
 [metadata.files]
 atomicwrites = [
@@ -547,8 +547,8 @@ cheroot = [
     {file = "cheroot-8.5.2.tar.gz", hash = "sha256:f137d03fd5155b1364bea557a7c98168665c239f6c8cedd8f80e81cdfac01567"},
 ]
 cherrypy = [
-    {file = "CherryPy-18.6.0-py2.py3-none-any.whl", hash = "sha256:c0a7283f02a384c112a0a18404fd3abd849fc7fd4bec19378067150a2573d2e4"},
-    {file = "CherryPy-18.6.0.tar.gz", hash = "sha256:56608edd831ad00991ae585625e0206ed61cf1a0850e4b2cc48489fb2308c499"},
+    {file = "CherryPy-18.6.1-py2.py3-none-any.whl", hash = "sha256:55659e6f012d374898d6d9d581e17cc1477b6a14710218e64f187b9227bea038"},
+    {file = "CherryPy-18.6.1.tar.gz", hash = "sha256:f33e87286e7b3e309e04e7225d8e49382d9d7773e6092241d7f613893c563495"},
 ]
 click = [
     {file = "click-8.0.1-py3-none-any.whl", hash = "sha256:fba402a4a47334742d782209a7c79bc448911afe1149d07bdabdf480b3e2f4b6"},
