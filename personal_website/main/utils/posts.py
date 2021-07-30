@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 from pathlib import Path
 from typing import List
 
@@ -29,5 +30,6 @@ class Post:
 
 def get_blog_posts(lang) -> List[Post]:
     posts_dir = Path(__file__).parents[2] / Path(current_app.config['POSTS_DIR'] / Path(lang))
-    posts = [Post(file) for file in posts_dir.glob(f'*.md')]
+    posts = sorted([Post(file) for file in posts_dir.glob(f'*.md')],
+                   key=lambda x: datetime.strptime(x.date, "%d-%m-%Y"), reverse=True)
     return posts
