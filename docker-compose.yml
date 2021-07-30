@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  yshalsager_website:
+    container_name: yshalsager_website
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: bash -c "gunicorn --bind 0.0.0.0:5000 website:app"
+    environment:
+      - FLASK_APP=website
+      - FLASK_ENV=production
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Cairo
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - web
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      ## HTTP Routers
+      - "traefik.http.routers.yshalsager_website.rule=Host(`yshalsager.me`)"
+      - "traefik.http.routers.yshalsager_website.entrypoints=websecure"
+      - "traefik.http.routers.yshalsager_website.tls=true"
+      - "traefik.http.routers.yshalsager_website.tls.certresolver=zerossl"
+      ## HTTP Services
+      - "traefik.http.services.yshalsager_website.loadbalancer.server.port=5000"
+
+networks:
+  web:
+    external: true
