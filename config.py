@@ -16,4 +16,4 @@ class Config:
     LOG_MAX_BYTES = 100000000
     LOG_COPIES = 5
     # Domain
-    DOMAIN = "https://yshalsager.me"
+    DOMAIN = "https://yshalsager.com"

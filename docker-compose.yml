@@ -19,7 +19,7 @@ services:
     labels:
       - "traefik.enable=true"
       ## HTTP Routers
-      - "traefik.http.routers.yshalsager_website.rule=Host(`yshalsager.me`)"
+      - "traefik.http.routers.yshalsager_website.rule=Host(`yshalsager.com`)"
       - "traefik.http.routers.yshalsager_website.entrypoints=websecure"
       - "traefik.http.routers.yshalsager_website.tls=true"
       - "traefik.http.routers.yshalsager_website.tls.certresolver=zerossl"
